@@ -1,5 +1,4 @@
-const API_BASE =
-  import.meta.env.VITE_API_BASE || '/api/todos'
+const API_BASE = 'https://tom-todo-backend-a77a7cb9808c.herokuapp.com/todos'
 
 async function request(url, options = {}) {
   let response
