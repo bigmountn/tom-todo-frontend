@@ -6,10 +6,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': {
+      '/todos': {
         target: 'https://tom-todo-backend-a77a7cb9808c.herokuapp.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },
